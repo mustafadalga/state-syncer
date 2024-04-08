@@ -1,0 +1,45 @@
+{
+  "name": "state-syncer",
+  "description": "A simple state management library",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --declaration --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "@types/react": "^18.2.73",
+    "react": "^18.2.0"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/state-syncer.d.ts",
+  "main": "./dist/state-syncer.umd.cjs",
+  "module": "./dist/state-syncer.js",
+  "exports": {
+    ".": {
+      "import": "./dist/state-syncer.js",
+      "require": "./dist/state-syncer.umd.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mustafadalga/state-syncer.git"
+  },
+  "author": "Mustafa Dalga",
+  "license": "GPL-3.0",
+  "keywords": [
+    "react",
+    "react-state-management",
+    "state-management",
+    "slice",
+    "state",
+    "store",
+    "manager",
+    "management"
+  ]
+}
